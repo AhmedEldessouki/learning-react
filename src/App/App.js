@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import './App.scss';
+import Header from '../Header/Header';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <Header />
+        <main>
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-          </p>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -18,7 +18,7 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        </main>
       </div>
     );
   }
