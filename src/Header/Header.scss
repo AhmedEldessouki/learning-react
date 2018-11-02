@@ -1,2 +1,7 @@
+$padding: 20px;
+
 .Header {
+    font-family: 'Rock Salt', cursive;
+    color: rgba($color: snow, $alpha: 0.5);
+    padding: $padding;
 }

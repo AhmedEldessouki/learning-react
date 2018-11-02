@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 // import { MdTerrain } from 'react-icons/md';
 // import { TiWeatherSnow } from 'react-icons/ti';
 // import { FaCalendar } from 'react-icons/fa';
 import SkiDayRow from '../SkiDayRow/SkiDayRow'
 import './SkiDayList.scss';
 
+
 const SkiDayList = ({ days }) => (
-	<table className="">
+	<table className="SkiDayList">
 		<thead>
 			<tr>
 				<th>Date</th>
@@ -30,5 +32,27 @@ const SkiDayList = ({ days }) => (
 	</table>
 )
 
+SkiDayList.propTypes = {
+	days: function (props) {
+		if (!Array.isArray(props.days)) {
+			return new Error(
+				"SkiDayList should be an array"
+			)
+		} else if (!props.days.length) {
+			return new Error(
+				"SkiDayList must have atleast 1 record"
+			);
 
+		} else {
+			return null;
+		}
+	}
+}
+SkiDayList.propTypes = {
+	days: PropTypes.array
+	// resort: PropTypes.string.isRequired,
+	// date: PropTypes.instanceOf(Date).isRequired,
+	// powder: PropTypes.bool,
+	// backcountry: PropTypes.bool
+}
 export default SkiDayList;

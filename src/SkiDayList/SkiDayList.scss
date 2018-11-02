@@ -1,5 +1,25 @@
-$padding: 15px;
+@import '../App/App.scss';
+$padding: 10px 5px;
+$margin: 20px 20px;
 
-table > * {
+.SkiDayList {
+    margin: $margin;
+    
+}
+table {
+    
+    padding: 20px;
+    table-layout: fixed;
+    width: calc(100% - 40px);
+    border-collapse: collapse;
+    border: 3px solid rgba($color: gray, $alpha: 0.5);
+}
+
+table>*,
+tr>* {
+    font-family: 'Rock Salt', cursive;
     padding: $padding;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba($color: white, $alpha: .6);
 }
