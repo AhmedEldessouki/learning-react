@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import SkiDayCount from './components/SkiDayCount';
 import SkiDayList from "./components/SkiDayList";
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Navigation from './components/navigation';
+import Navigation from './components/Navigation/Navigation';
 import NotFound from './components/NotFound/NotFound';
 
 
@@ -15,9 +15,9 @@ class App extends Component {
 			<div>
         <Navigation />
           <Switch>
-            <Route exact path="/" component={SkiDayCount} />
+            <Route exact={true} path="/" component={SkiDayCount} />
 						<Route path="/skiDayCount" component={SkiDayCount} />
-            <Route path="/header" component={Header} />
+            <Route  path="/header" component={Header} />
             <Route path="/skiDayList" component={SkiDayList}
 									 days={
 										 [
