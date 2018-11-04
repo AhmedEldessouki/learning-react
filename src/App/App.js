@@ -43,7 +43,7 @@ class App extends Component {
         <div>
         <Navigation/>
           <Switch>
-            <Route path='/' component={App} exact />
+            <Route path='/' component={SkiDayCount} exact />
             <Route path="/header" component={Header} />
             <Route path='/skiDayCount' component={SkiDayCount} />
             <Route path='/skiDayList' component={SkiDayList} 

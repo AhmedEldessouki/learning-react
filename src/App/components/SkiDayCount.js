@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './SkiDayCount/SkiDayCount.scss';
 import { MdTerrain } from 'react-icons/md';
 import { TiWeatherSnow } from 'react-icons/ti';
-import { FaCalendar } from 'react-icons/fa';
+// import { FaCalendar } from 'react-icons/fa';
 
 
 class SkiDayCount extends Component {
@@ -25,7 +25,7 @@ class SkiDayCount extends Component {
 			<div className="SkiDayCount">
 				<div className="total-days">
 					<span>{this.props.total}</span>
-					<FaCalendar />
+					{/* <FaCalendar /> */}
 					<span> days</span>
 				</div>
 				<div className="powder-days">
