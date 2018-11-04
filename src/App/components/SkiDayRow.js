@@ -3,7 +3,7 @@ import React from 'react';
 import { MdTerrain } from 'react-icons/md';
 import { TiWeatherSnow } from 'react-icons/ti';
 import { FaCalendar } from 'react-icons/fa';
-import SkiDayList from '../SkiDayList/SkiDayList';
+// import SkiDayList from './components/SkiDayList/SkiDayList';
 // import App from '../App/App';
 
 const SkiDayRow = ({ resort, date, powder, backcountry }) => (

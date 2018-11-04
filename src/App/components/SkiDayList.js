@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import { MdTerrain } from 'react-icons/md';
 // import { TiWeatherSnow } from 'react-icons/ti';
 // import { FaCalendar } from 'react-icons/fa';
-import SkiDayRow from '../SkiDayRow/SkiDayRow'
-import './SkiDayList.scss';
+import SkiDayRow from './SkiDayRow'
+import './SkiDayList/SkiDayList.scss';
+
 
 
 const SkiDayList = ({ days }) => (
@@ -48,11 +49,11 @@ SkiDayList.propTypes = {
 		}
 	}
 }
-SkiDayList.propTypes = {
-	days: PropTypes.array
-	// resort: PropTypes.string.isRequired,
-	// date: PropTypes.instanceOf(Date).isRequired,
-	// powder: PropTypes.bool,
-	// backcountry: PropTypes.bool
-}
+// SkiDayList.days.propTypes = {
+// 	days: PropTypes.array
+// 	// resort: PropTypes.string.isRequired,
+// 	// date: PropTypes.instanceOf(Date).isRequired,
+// 	// powder: PropTypes.bool,
+// 	// backcountry: PropTypes.bool
+// }
 export default SkiDayList;
