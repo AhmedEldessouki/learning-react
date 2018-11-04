@@ -1,4 +1,5 @@
 .SkiDayCount {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   font-size: 3em;
@@ -34,4 +35,9 @@
       }
     }
   }
+  //this is for the React-icons
+  svg {
+    color: red;
+  }
 }
+
