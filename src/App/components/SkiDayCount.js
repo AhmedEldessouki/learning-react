@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './SkiDayCount.scss';
+import './SkiDayCount/SkiDayCount.scss';
 import { MdTerrain } from 'react-icons/md';
 import { TiWeatherSnow } from 'react-icons/ti';
 import { FaCalendar } from 'react-icons/fa';

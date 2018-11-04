@@ -3,8 +3,9 @@ import React from 'react';
 // import { MdTerrain } from 'react-icons/md';
 // import { TiWeatherSnow } from 'react-icons/ti';
 // import { FaCalendar } from 'react-icons/fa';
-import SkiDayRow from '../SkiDayRow/SkiDayRow'
-import './SkiDayList.scss';
+import SkiDayRow from './SkiDayRow'
+import './SkiDayList/SkiDayList.scss';
+
 
 
 const SkiDayList = ({ days }) => (
