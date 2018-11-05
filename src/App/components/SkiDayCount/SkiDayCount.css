@@ -1,0 +1,67 @@
+.SkiDayCount {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 3em;
+  height: calc(100% - 3em);
+}
+
+.SkiDayCount > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SkiDayCount > div.total-days {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 2em;
+}
+
+.SkiDayCount > div.total-days span, .SkiDayCount > div.total-days svg {
+  height: 200px;
+}
+
+.SkiDayCount > div:not(.total-days) {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.SkiDayCount > div span, .SkiDayCount > div svg {
+  background-color: white;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SkiDayCount > div span:first-child, .SkiDayCount > div svg:first-child {
+  border-radius: 25px 0 0 25px;
+  padding-left: 15px;
+}
+
+.SkiDayCount > div span:last-child, .SkiDayCount > div svg:last-child {
+  border-radius: 0 25px 25px 0;
+  font-size: .5em;
+  padding-right: 15px;
+}
+
+.SkiDayCount svg {
+  color: red;
+}
+/*# sourceMappingURL=SkiDayCount.css.map */

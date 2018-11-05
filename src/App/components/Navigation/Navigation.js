@@ -8,6 +8,7 @@ const Navigation = () => {
 			<ul>
 				<li><NavLink exact to="/" activeClassName="selected">home page</NavLink></li>
 				<li><NavLink exact to="/header" activeClassName="selected">header page</NavLink></li>
+				<li><NavLink exact to="/:list" activeClassName="selected">List</NavLink></li>
 			</ul>
 		</div>
 

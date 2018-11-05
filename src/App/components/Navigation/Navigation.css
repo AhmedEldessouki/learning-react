@@ -1,0 +1,8 @@
+.Navigation {
+  color: rgba(255, 250, 250, 0.5);
+}
+
+.Navigation .selected {
+  background-color: red;
+}
+/*# sourceMappingURL=Navigation.css.map */
