@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
-import SkiDayCount from './components/SkiDayCount';
-import SkiDayList from "./components/SkiDayList";
+import SkiDayCount from './components/SkiDayCount/SkiDayCount';
+import SkiDayList from "./components/SkiDayList/SkiDayList";
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import NotFound from './components/NotFound/NotFound';
