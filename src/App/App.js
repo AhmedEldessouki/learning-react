@@ -6,10 +6,11 @@ import SkiDayList from "./components/SkiDayList/SkiDayList";
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import NotFound from './components/NotFound/NotFound';
+import Api from './components/api/api';
+// import axios from 'axios';
 
 
 class App extends Component {
-
 	render() {
 		return (
 			<div>
@@ -17,7 +18,8 @@ class App extends Component {
           <Switch>
             <Route exact={true} path="/" component={SkiDayCount} />
 						<Route path="/skiDayCount" component={SkiDayCount} />
-            <Route  path="/header" component={Header} />
+						<Route path="/Api" component={Api} />
+            <Route path="/header" component={Header} />
             <Route path="/skiDayList" component={SkiDayList}
 									 days={
 										 [
@@ -44,7 +46,7 @@ class App extends Component {
 						/>
 						<Route path="/404" component={NotFound} />
 						<Redirect from="*" to="/404" />
-          </Switch>
+          </Switch>          
         </div>
 		);
 	}

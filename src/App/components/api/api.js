@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import './SkiDayCount.scss';
-import { MdTerrain } from 'react-icons/md';
-import { TiWeatherSnow } from 'react-icons/ti';
+// import PropTypes from 'prop-types';
+import './api.scss';
+// import { MdTerrain } from 'react-icons/md';
+// import { TiWeatherSnow } from 'react-icons/ti';
 // import { FaCalendar } from 'react-icons/fa';
 import axios from 'axios';
 
 
-class SkiDayCount extends Component {
+class Api extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { todos: [] };
@@ -58,23 +58,24 @@ class SkiDayCount extends Component {
 				{/*{this.calcGoalPrograss(this.props.total, this.props.goal)}*/}
 				{/*</span>*/}
 				{/*</div>*/}
-				
+				<br />
+				<ul className="imgGrid">
+					{(myData.length > 10) ? myData.map((item, i) =>
+						<li key={i} >
+							<div className="container">
+								<img className="image" src={item.url} alt={item.id} />
+								<div class="middle">
+									<div class="text">{item.title}</div>
+								</div>
+							</div>
+						</li>,
+					) : <p>no data..</p>}
+				</ul>
 			</div>
 		);
 	}
 }
-SkiDayCount.defaultProps = {
-	total: 50,
-	powder: 10,
-	backcountry: 15,
-	goal: 75
-}
-SkiDayCount.propTypes = {
-	total: PropTypes.number,
-	powder: PropTypes.number,
-	backcountry: PropTypes.number,
-	goal: PropTypes.number,
-}
-export default SkiDayCount;
+
+export default Api;
 
 
