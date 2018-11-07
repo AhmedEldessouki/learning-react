@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './SkiDayCount.scss';
-import { MdTerrain } from 'react-icons/md';
-import { TiWeatherSnow } from 'react-icons/ti';
+// import { MdTerrain } from 'react-icons/md';
+// import { TiWeatherSnow } from 'react-icons/ti';
 // import { FaCalendar } from 'react-icons/fa';
 import axios from 'axios';
 
@@ -21,21 +21,9 @@ class SkiDayCount extends Component {
 	}
 	componentDidMount() {
 		// console.log(this.props)
-		console.log('i mounted');
-		axios.get(`https://jsonplaceholder.typicode.com/photos`)
-			.then(res => {
-				console.log('res: ', res.data);
-				this.setState({ todos: res.data });
-				console.log("state todos", this.state.todos);
-				// console.log("state todo 1",this.state.todos[0].completed);
-				// console.log("state todo 1",this.state.todos[0].title);
-			})
-			.catch(error => {
-				console.log("my error:", error)
-			});
 	}
 	render() {
-		const myData = this.state.todos;
+		
 		return (
 			<div className="SkiDayCount">
 				{/*<div className="total-days">*/}
